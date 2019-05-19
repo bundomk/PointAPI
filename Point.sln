@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Point.API", "Point.API\Point.API.csproj", "{CA32D816-FC6D-4A73-9855-43CD0737BD70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{9952415D-DE8A-4575-9357-22A464BEFE54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{1F82200D-A60C-434C-AC79-2EBDEC066277}"
+	ProjectSection(SolutionItems) = preProject
+		create_image_table.sql = create_image_table.sql
+		create_infopost_table.sql = create_infopost_table.sql
+		create_institution_table.sql = create_institution_table.sql
+		create_user_table.sql = create_user_table.sql
+		create_votepost_table.sql = create_votepost_table.sql
+		create_zone_table.sql = create_zone_table.sql
+		create_zonepoint_table.sql = create_zonepoint_table.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Point.Contracts", "Point.Contracts\Point.Contracts.csproj", "{0C346A61-3ECA-4791-B61C-F6703DA3DEC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Point.Common", "Point.Common\Point.Common.csproj", "{BF8FB277-B271-44C6-9754-87AC6A4A6F3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Point.Services", "Point.Services\Point.Services.csproj", "{572FFC30-1932-4F4B-A6C4-D152405F82FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Point.Data", "Point.Data\Point.Data.csproj", "{27CA71BA-3FD9-4F46-986C-F5C7AC9BCB08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Point.Tests", "Point.Tests\Point.Tests.csproj", "{726A57A1-A151-465C-BCE2-DDFE74D1F1B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{53038A83-20E2-4BA4-8454-25B7C18150A0}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+		Point.postman_collection.json = Point.postman_collection.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA32D816-FC6D-4A73-9855-43CD0737BD70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA32D816-FC6D-4A73-9855-43CD0737BD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA32D816-FC6D-4A73-9855-43CD0737BD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA32D816-FC6D-4A73-9855-43CD0737BD70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C346A61-3ECA-4791-B61C-F6703DA3DEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C346A61-3ECA-4791-B61C-F6703DA3DEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C346A61-3ECA-4791-B61C-F6703DA3DEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C346A61-3ECA-4791-B61C-F6703DA3DEC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF8FB277-B271-44C6-9754-87AC6A4A6F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF8FB277-B271-44C6-9754-87AC6A4A6F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF8FB277-B271-44C6-9754-87AC6A4A6F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF8FB277-B271-44C6-9754-87AC6A4A6F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{572FFC30-1932-4F4B-A6C4-D152405F82FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572FFC30-1932-4F4B-A6C4-D152405F82FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572FFC30-1932-4F4B-A6C4-D152405F82FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572FFC30-1932-4F4B-A6C4-D152405F82FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27CA71BA-3FD9-4F46-986C-F5C7AC9BCB08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27CA71BA-3FD9-4F46-986C-F5C7AC9BCB08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27CA71BA-3FD9-4F46-986C-F5C7AC9BCB08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27CA71BA-3FD9-4F46-986C-F5C7AC9BCB08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{726A57A1-A151-465C-BCE2-DDFE74D1F1B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{726A57A1-A151-465C-BCE2-DDFE74D1F1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{726A57A1-A151-465C-BCE2-DDFE74D1F1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{726A57A1-A151-465C-BCE2-DDFE74D1F1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F82200D-A60C-434C-AC79-2EBDEC066277} = {9952415D-DE8A-4575-9357-22A464BEFE54}
+	EndGlobalSection
+EndGlobal

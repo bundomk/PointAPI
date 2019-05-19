@@ -1,0 +1,245 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Point",
+		"_postman_id": "cb3016fb-5d14-03eb-6429-f10542c85847",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Institution",
+			"description": "",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"url": "{{URL}}/Institution/add",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Description\":\"des\",\"Name\":\"InstName\",\"Longitude\":223.134235,\"Latitude\":123.134235}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "AddZone",
+					"request": {
+						"url": "{{URL}}/Institution/addzone",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Description\":\"des\",\"Name\":\"ZoneName\",\"InstitutionId\":1,\"Points\":[{\"Longitude\":21.535606,\"Latitude\":41.999920},{\"Longitude\":21.335606,\"Latitude\":41.999920},{\"Longitude\":21.335606,\"Latitude\":41.893920},{\"Longitude\":21.535606,\"Latitude\":41.893920}]}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePoints",
+					"request": {
+						"url": "{{URL}}/Institution/updatepoints",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"ZoneId\":\"7\",\"Points\":[{\"Longitude\":21.535606,\"Latitude\":41.999920},{\"Longitude\":21.335606,\"Latitude\":41.999920},{\"Longitude\":21.335606,\"Latitude\":41.893920},{\"Longitude\":21.535606,\"Latitude\":41.893920}]}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"url": "{{URL}}/Institution/get/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"url": "{{URL}}/Institution/get",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RegisterUser",
+			"request": {
+				"url": "{{URL}}/register/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"DeviceId\":\"abcd432ere345f\", \"FirstName\":\"Test\", \"LastName\":\"Test\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "InfoPostAdd",
+			"request": {
+				"url": "{{URL}}/info/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Description\":\"des\",\"UserId\":\"5fea4433-d46d-459d-8ec5-d10eba80dc06\",\"Longitude\":21.435606,\"Latitude\":41.993920,\"Images\":[\"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\"]}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ImageGet",
+			"request": {
+				"url": "{{URL}}/image/get/befaebe1-de58-4b03-a064-8241b5bbfcc0/256.png",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PointGet",
+			"request": {
+				"url": "{{URL}}/point/get/118",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PointGetAllPerDistance",
+			"request": {
+				"url": "{{URL}}/point/getall/8/5/41.980247/21.464424",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PointGetAll",
+			"request": {
+				"url": "{{URL}}/point/getall",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ValuesGet",
+			"request": {
+				"url": "{{URL}}/values",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Approve",
+			"request": {
+				"url": "{{URL}}/info/approve/72",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reject",
+			"request": {
+				"url": "{{URL}}/info/reject/7",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "LIke",
+			"request": {
+				"url": "{{URL}}/info/like/17/115",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Dislike",
+			"request": {
+				"url": "{{URL}}/info/dislike/1/115",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
